@@ -3,11 +3,13 @@ External game camera tool for PS4 games.
 
 How to Use
 Step 1: Connection
+
 Run PS4 FreeCam Tool.exe
-Enter your PS4 IP address
-Click 🔌 Connect
+
+Enter your PS4 IP address Click 🔌 Connect
 Click 📋 Refresh Processes
 Select your game eboot.bin from the list and click ✅ Attach Selected Process
+
 Make sure the latest ps4debug.bin is in use.
 
 Step 2: Camera Addresses Setup
