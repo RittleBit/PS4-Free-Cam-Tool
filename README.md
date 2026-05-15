@@ -5,7 +5,7 @@
 2. Enter your **PS4 IP address**
 3. Click **🔌 Connect**
 4. Click **📋 Refresh Processes**
-5. Select your game process (usually `eboot.bin`) and click **✅ Attach Selected Process**
+5. Select your game process (`eboot.bin`) and click **✅ Attach Selected Process**
 
 > Make sure the latest **ps4debug** payload is running on your PS4.
 
@@ -17,13 +17,11 @@
 
 #### Rotation
 - **Pitch / Yaw** (most common): Enter the two float addresses.
-- **3×3 Matrix**: Switch to the Matrix tab and enter all 9 float addresses (row-major).
+- **3×3 Matrix**: Switch to the Matrix tab and enter all 9 float addresses.
 
 #### Additional Addresses
 - **FOV** – Enter the Field of View address.
 - **Game Speed** – (Optional) Enter address to control game speed.
-
----
 
 ## Controls
 
@@ -39,16 +37,12 @@
 - **Look System**: `Pitch/Yaw` or `Matrix`
 - **Look Mode**: `Normal` or `Swapped`
 
----
-
 ## Camera Path Editor
 1. Click **📽️ Show Camera Path Editor**
 2. Fly to a desired position and click **⏺ Record Keyframe**
 3. Repeat for multiple points
 4. Click **▶ Play Path** to playback the smooth cinematic path
 5. Use **Save** / **Load** to store paths as `.json` files
-
----
 
 ## Tuning Panel
 Fine-tune the feel of the camera:
