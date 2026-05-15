@@ -41,7 +41,7 @@
 1. Click **📽️ Show Camera Path Editor**
 2. Fly to a desired position and click **⏺ Record Keyframe**
 3. Repeat for multiple points
-4. Click **▶ Play Path** to playback the smooth cinematic path
+4. Click **▶ Play Path** to playback the cinematic path
 5. Use **Save** / **Load** to store paths as `.json` files
 
 ## Tuning Panel
