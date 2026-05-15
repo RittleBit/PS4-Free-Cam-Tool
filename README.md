@@ -1,63 +1,60 @@
-# PS4-Free-Cam-Tool
-External game camera tool for PS4 games.
+## How to Use
 
-How to Use
-Step 1: Connection
+### Step 1: Connection
+1. Run `PS4 FreeCam Tool.exe`
+2. Enter your **PS4 IP address**
+3. Click **🔌 Connect**
+4. Click **📋 Refresh Processes**
+5. Select your game process (usually `eboot.bin`) and click **✅ Attach Selected Process**
 
-Run PS4 FreeCam Tool.exe
-Enter your PS4 IP address Click 🔌 Connect
-Click 📋 Refresh Processes
-Select your game eboot.bin from the list and click ✅ Attach Selected Process
+> Make sure the latest **ps4debug** payload is running on your PS4.
 
-(Make sure the latest ps4debug.bin is in use.)
+### Step 2: Camera Addresses Setup
 
-Step 2: Camera Addresses Setup
-Position (X / Y / Z)
-Enter the three addresses for camera position.
-Enable "Atomic XYZ Write" if the addresses are consecutive (X, X+4, X+8).
+#### Position (X / Y / Z)
+- Enter the three memory addresses for the camera position.
+- Enable **"Atomic XYZ Write"** if the addresses are consecutive (`X`, `X+4`, `X+8`).
 
-Rotation
-Pitch / Yaw: Enter two float addresses.
-3×3 Matrix: Switch tab and enter 9 addresses
+#### Rotation
+- **Pitch / Yaw** (most common): Enter the two float addresses.
+- **3×3 Matrix**: Switch to the Matrix tab and enter all 9 float addresses (row-major).
 
-FOV
-Enter the FOV address.
+#### Additional Addresses
+- **FOV** – Enter the Field of View address.
+- **Game Speed** – (Optional) Enter address to control game speed.
 
-Game Speed 
-Enter address to control game speed.
+---
 
-Controls & Features
+## Controls
 
-Controller Layout
-Left Stick → Move (forward, back, strafe)
-Right Stick → Look around (Pitch + Yaw)
-L2 / R2 → Move Up / Down (Height)
-X Button → Decrease FOV
-Y Button → Increase FOV
+### Controller Layout
+- **Left Stick** → Move (forward, strafe)
+- **Right Stick** → Look (Pitch + Yaw)
+- **L2 / R2** → Move Up / Down (Height)
+- **X Button** → Decrease FOV
+- **Y Button** → Increase FOV
 
-Movement & Look Settings
-Movement Mode: Camera-Relative (recommended) or World-Axis
-Look System: Pitch/Yaw or Matrix
-Look Mode: Normal or Swapped
+### Movement & Look Settings
+- **Movement Mode**: `Camera-Relative` (recommended) or `World-Axis`
+- **Look System**: `Pitch/Yaw` or `Matrix`
+- **Look Mode**: `Normal` or `Swapped`
 
-Camera Path Editor
-Click 📽️ Show Camera Path Editor
-Fly to desired position → Click ⏺ Record Keyframe
-Repeat for multiple points
-Click ▶ Play Path
-You can Save and Load paths 
+---
 
-Tuning Panel
-Adjust these for better feel:
-Rotation Smoothing
-Move Smoothing
-Input Smoothing
-Deadzone
-Speed Multipliers
-Base Movement Speed
+## Camera Path Editor
+1. Click **📽️ Show Camera Path Editor**
+2. Fly to a desired position and click **⏺ Record Keyframe**
+3. Repeat for multiple points
+4. Click **▶ Play Path** to playback the smooth cinematic path
+5. Use **Save** / **Load** to store paths as `.json` files
 
-Tips for Best Results
-Use Atomic XYZ whenever possible.
-Start with default smoothing values, then tweak.
-Record several keyframes for nice cinematic paths.
+---
 
+## Tuning Panel
+Fine-tune the feel of the camera:
+- Rotation Smoothing
+- Move Smoothing
+- Input Smoothing
+- Deadzone
+- Speed Multipliers
+- Base Movement Speed
