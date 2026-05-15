@@ -23,6 +23,8 @@
 - **FOV** – Enter the Field of View address.
 - **Game Speed** – (Optional) Enter address to control game speed.
 
+> User needs to provide camera addresses of their games. As an example Driveclub's are included. 
+
 ## Controls
 
 ### Controller Layout
