@@ -16,7 +16,7 @@
 - Enable **"Atomic XYZ Write"** if the addresses are consecutive (`X`, `X+4`, `X+8`).
 
 #### Rotation
-- **Pitch / Yaw** (most common): Enter the two float addresses.
+- **Pitch / Yaw**: Enter the two float addresses.
 - **3×3 Matrix**: Switch to the Matrix tab and enter all 9 float addresses.
 
 #### Additional Addresses
